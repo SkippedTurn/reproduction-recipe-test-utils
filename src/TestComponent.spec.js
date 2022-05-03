@@ -31,7 +31,7 @@ describe("The TestComponent", () => {
 		// Select "Fruits"
 		await wrapper.findAll(".field")[2].trigger("click");
 		
-		expect(wrapper.findAll(".subField")).toHaveLength(3);
+		expect(wrapper.findAll(".subField")).toHaveLength(3);// Fails here, can't find any subFields
 		expect(wrapper.findAll(".subField")[0].text()).toContain("Apple");
 		expect(wrapper.findAll(".subField")[1].text()).toContain("Banana");
 		expect(wrapper.findAll(".subField")[2].text()).toContain("Pear");
